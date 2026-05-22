@@ -17,3 +17,6 @@ Isi halaman nilai:
 
 KOLOBORATOR 2 :
 Mengawasi dan mengecek project.
+
+Kolaborator 1 Saya membuat halaman nilai menggunakan html sederhana 
+
