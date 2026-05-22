@@ -1,0 +1,19 @@
+PEMBAGIAN TUGAS PROJECT
+
+OWNER :
+Membuat rancangan halaman beranda.
+
+Di halaman beranda terdapat:
+- Judul website
+- Tombol menuju halaman nilai
+
+KOLOBORATOR 1 :
+Membuat rancangan halaman nilai.
+
+Isi halaman nilai:
+- Nama Owner : (nilai)
+- Nama Kolaborator 1 : (nilai)
+- Nama Kolaborator 2 : (nilai)
+
+KOLOBORATOR 2 :
+Mengawasi dan mengecek project.
