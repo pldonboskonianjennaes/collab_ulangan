@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Nilai</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+
+background:linear-gradient(
+-45deg,
+#0f172a,
+#1e3a8a,
+#2563eb,
+#38bdf8
+);
+
+background-size:400% 400%;
+animation:bg 10s infinite ease;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+
+width:90%;
+max-width:900px;
+
+padding:40px;
+
+background:rgba(255,255,255,0.1);
+
+backdrop-filter:blur(15px);
+
+border-radius:30px;
+
+box-shadow:
+0 10px 40px rgba(0,0,0,.3);
+
+animation:masuk 1.5s ease;
+
+}
+
+@keyframes masuk{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+h1{
+
+text-align:center;
+color:white;
+
+font-size:40px;
+
+margin-bottom:40px;
+
+text-shadow:0 0 10px white;
+
+}
+
+.card{
+
+padding:25px;
+
+margin-bottom:25px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.15);
+
+transition:.5s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 10px 30px rgba(255,255,255,.2);
+
+}
+
+.nama{
+
+display:flex;
+
+justify-content:space-between;
+
+color:white;
+
+font-size:20px;
+
+margin-bottom:10px;
+
+}
+
+.bar{
+
+height:15px;
+
+background:rgba(255,255,255,.2);
+
+border-radius:50px;
+
+overflow:hidden;
+
+}
+
+.nilai{
+
+height:100%;
+
+border-radius:50px;
+
+animation:isi 2s ease;
+
+}
+
+.owner{
+width:95%;
+background:#00ff9d;
+}
+
+.k1{
+width:90%;
+background:#ffb703;
+}
+
+.k2{
+width:100%;
+background:#ff4d6d;
+}
+
+@keyframes isi{
+
+from{
+width:0;
+}
+
+}
+
+.circle{
+
+position:absolute;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.1);
+
+animation:float 8s infinite;
+}
+
+.circle:nth-child(1){
+
+width:200px;
+height:200px;
+
+top:-50px;
+left:-50px;
+}
+
+.circle:nth-child(2){
+
+width:250px;
+height:250px;
+
+bottom:-80px;
+right:-80px;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-30px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="container">
+
+<h1>📊 Daftar Nilai Tim</h1>
+
+<div class="card">
+
+<div class="nama">
+<span>👑 Owner</span>
+<span>95</span>
+</div>
+
+<div class="bar">
+<div class="nilai owner"></div>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="nama">
+<span>🧑‍💻 Kolaborator 1</span>
+<span>90</span>
+</div>
+
+<div class="bar">
+<div class="nilai k1"></div>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="nama">
+<span>👨‍🏫 Kolaborator 2</span>
+<span>100</span>
+</div>
+
+<div class="bar">
+<div class="nilai k2"></div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
